@@ -4,6 +4,6 @@ export interface IResponse<T> {
   data: T;
 }
 
-export interface INotificationFactory<T> {
+export interface INotification<T> {
   send(): IResponse<T>;
 }

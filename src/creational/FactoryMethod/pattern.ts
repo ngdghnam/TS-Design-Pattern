@@ -14,5 +14,13 @@ export class Ship implements ITransport {
   }
 }
 
-const ship = new Ship();
-console.log("Ship method:", ship.deliver());
+export class TransportFactory {
+  static create(type: string) {
+    if (type === "ship") {
+      return new Ship();
+    }
+    if (type === "truck") {
+      return new Truck();
+    }
+  }
+}

@@ -1,8 +1,5 @@
 import { eMessages } from "../enums";
-import {
-  INotificationFactory,
-  IResponse,
-} from "../interfaces/INotificationFactory";
+import { INotification, IResponse } from "../interfaces/INotificationFactory";
 
 interface ISmsResponse {
   from: string;
@@ -11,7 +8,7 @@ interface ISmsResponse {
   message: string;
 }
 
-export class SmsNotification implements INotificationFactory<ISmsResponse> {
+export class SmsNotification implements INotification<ISmsResponse> {
   send(): IResponse<ISmsResponse> {
     // Do something
 
