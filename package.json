@@ -1,0 +1,18 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "Learning Design Patterns with TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "watch": "tsc --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
