@@ -16,11 +16,24 @@ export class Ship implements ITransport {
 
 export class TransportFactory {
   static create(type: string) {
-    if (type === "ship") {
-      return new Ship();
-    }
-    if (type === "truck") {
-      return new Truck();
+    // if (type === "ship") {
+    //   return new Ship();
+    // }
+    // if (type === "truck") {
+    //   return new Truck();
+    // }
+    switch (type) {
+      case "ship":
+        return new Ship();
+
+      case "truck":
+        return new Truck();
+
+      default:
+        return "Does not implement this transport";
     }
   }
 }
+
+const shipTransport = TransportFactory.create("ship");
+const truckTransport = TransportFactory.create("truck");

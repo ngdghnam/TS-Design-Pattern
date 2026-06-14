@@ -1,6 +1,6 @@
-import { EmailNotification } from "./example1/classes/MailNotification";
-import { SmsNotification } from "./example1/classes/SmsNotification";
-import { eNotificationType } from "./example1/enums";
+import { EmailNotification } from "./classes/MailNotification";
+import { SmsNotification } from "./classes/SmsNotification";
+import { eNotificationType } from "./enums";
 
 export class NotificationFactory {
   static create(type: string) {
